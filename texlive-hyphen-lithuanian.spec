@@ -45,12 +45,12 @@ Hyphenation patterns for Lithuanian in L7X and UTF-8 encodings.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-lithuanian <<EOF
-%% from hyphen-lithuanian:
+\%\% from hyphen-lithuanian:
 lithuanian loadhyph-lt.tex
 EOF
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-lithuanian <<EOF
-%% from hyphen-lithuanian:
+\%\% from hyphen-lithuanian:
 \addlanguage{lithuanian}{loadhyph-lt.tex}{}{2}{2}
 EOF
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
