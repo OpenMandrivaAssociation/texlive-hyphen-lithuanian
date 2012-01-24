@@ -5,8 +5,8 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-hyphen-lithuanian
-Version:	20111103
-Release:	2
+Version:	20120124
+Release:	1
 Summary:	Lithuanian hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -45,14 +45,16 @@ Hyphenation patterns for Lithuanian in L7X and UTF-8 encodings.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-lithuanian <<EOF
-\%\% from hyphen-lithuanian:
+\%% from hyphen-lithuanian:
 lithuanian loadhyph-lt.tex
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_dat_d}/hyphen-lithuanian
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-lithuanian <<EOF
-\%\% from hyphen-lithuanian:
+\%% from hyphen-lithuanian:
 \addlanguage{lithuanian}{loadhyph-lt.tex}{}{2}{2}
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_def_d}/hyphen-lithuanian
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
 cat > %{buildroot}%{_texmf_language_lua_d}/hyphen-lithuanian <<EOF
 -- from hyphen-lithuanian:
