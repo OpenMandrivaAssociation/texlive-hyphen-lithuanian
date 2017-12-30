@@ -5,8 +5,8 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-hyphen-lithuanian
-Version:	20120124
-Release:	9
+Version:	20170414
+Release:	1
 Summary:	Lithuanian hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
