@@ -1,5 +1,5 @@
 Name:		texlive-hyphen-lithuanian
-Version:	20181105
+Version:	20190406
 Release:	1
 Summary:	Lithuanian hyphenation patterns
 Group:		Publishing
